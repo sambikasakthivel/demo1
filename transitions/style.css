@@ -1,0 +1,16 @@
+#a
+{background-color: pink;
+width: 200px;
+height: 100px;
+animation: ani 5s infinite;
+transition: 5s;
+
+}
+
+/* #a:hover{
+    background-color:green;} */
+
+@keyframes ani {
+    from{transform: scale(100%);}
+    to{transform: scale(150%);}
+}

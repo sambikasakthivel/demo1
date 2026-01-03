@@ -1,0 +1,30 @@
+#a{background-color: grey;
+width: 200px;
+height: 100px;
+animation: ani 10s infinite;
+transition: 20s;
+transform: translate(50px,100px);}
+
+
+#a:hover{background-color: crimson;}
+
+@keyframes ani{
+    from{transform: translate(100%);}
+    to{transform: scale(200%);}
+}
+
+
+#b{background-color: blue;
+width: 200px;
+height: 100px;
+animation: animation 10s infinate;
+transition: 20s;
+transform: rotate(30deg);}
+
+#b:hover{background-color: blueviolet;}
+
+@keyframes animation{
+    from{transform: rotate(30deg);}
+}
+
+
