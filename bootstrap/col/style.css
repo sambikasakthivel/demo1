@@ -1,0 +1,30 @@
+.a{background-color: antiquewhite;
+width: 100%;
+height: 30px;
+display: flex;
+justify-content: center;}
+
+
+.a1{width: 20%;
+height: 30px;}
+
+.a2{width: 20%;
+height: 30px;}
+
+.a3{width: 20%;
+height: 30px;}
+
+.a4{width: 20%;
+height: 30px;}
+
+.b{
+width: 100%;
+height: 600px;
+background-image: url(https://img.freepik.com/free-photo/brunette-business-woman-with-wavy-long-hair-blue-eyes-stands-holding-notebook-hands_197531-343.jpg?semt=ais_hybrid&w=740&q=80);
+display: flex;
+background-repeat: no-repeat;
+float: right;
+background-position:right ;
+border-radius: 350px;
+
+}
