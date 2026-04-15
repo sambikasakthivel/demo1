@@ -1,0 +1,798 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sambikka | Full Stack Developer</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800;900&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="loader">
+        <div class="loader-content">
+            <div class="loader-logo">S</div>
+            <div class="loader-bar">
+                <div class="loader-progress"></div>
+            </div>
+            <p class="loader-text">Loading creativity...</p>
+        </div>
+    </div>
+
+    <div class="cursor-dot"></div>
+    <div class="cursor-ring"></div>
+
+    <div class="noise-overlay"></div>
+
+    <nav class="navbar">
+        <div class="nav-container">
+            <a href="#home" class="logo">
+                <span class="logo-bracket">{</span>
+                <span class="logo-text">Sambikka</span>
+                <span class="logo-bracket">}</span>
+            </a>
+            <ul class="nav-menu">
+                <li><a href="#home" class="nav-link" data-text="Home">Home</a></li>
+                <li><a href="#about" class="nav-link" data-text="About">About</a></li>
+                <li><a href="#skills" class="nav-link" data-text="Skills">Skills</a></li>
+                <li><a href="#projects" class="nav-link" data-text="Projects">Projects</a></li>
+                <li><a href="#experience" class="nav-link" data-text="Experience">Experience</a></li>
+                <li><a href="#contact" class="nav-link" data-text="Contact">Contact</a></li>
+            </ul>
+            <div class="menu-toggle">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </nav>
+
+    <section id="home" class="hero">
+        <canvas id="particleCanvas"></canvas>
+        <div class="hero-orbs">
+            <div class="orb orb-1"></div>
+            <div class="orb orb-2"></div>
+            <div class="orb orb-3"></div>
+            <div class="orb orb-4"></div>
+        </div>
+        <div class="hero-grid"></div>
+        
+        <div class="hero-content">
+            <div class="hero-badge animate-fade-in">
+                <span class="badge-dot"></span>
+                Available for opportunities
+            </div>
+            
+            <h1 class="hero-title">
+                <span class="title-line">
+                    <span class="word" data-delay="0">Hello,</span>
+                    <span class="word" data-delay="100">I'm</span>
+                </span>
+                <span class="title-line">
+                    <span class="name-highlight glitch" data-text="Sambikka">Sambikka</span>
+                </span>
+            </h1>
+            
+            <div class="hero-subtitle-wrapper">
+                <p class="hero-subtitle">
+                    <span class="rotate-text">
+                        <span class="rotate-item">Full Stack Developer</span>
+                        <span class="rotate-item">UI/UX Designer</span>
+                        <span class="rotate-item">Problem Solver</span>
+                        <span class="rotate-item">Tech Enthusiast</span>
+                    </span>
+                </p>
+            </div>
+            
+            <p class="hero-description animate-slide-up">
+                Crafting beautiful, performant web experiences with clean code and creative design.
+                Turning complex problems into elegant solutions.
+            </p>
+            
+            <div class="hero-buttons animate-slide-up delay-200">
+                <a href="#projects" class="btn btn-magnetic btn-primary">
+                    <span class="btn-text">View My Work</span>
+                    <span class="btn-icon"><i class="fas fa-arrow-right"></i></span>
+                    <span class="btn-bg"></span>
+                </a>
+                <a href="#contact" class="btn btn-magnetic btn-outline">
+                    <span class="btn-text">Let's Talk</span>
+                    <span class="btn-icon"><i class="fas fa-comment-dots"></i></span>
+                </a>
+            </div>
+            
+            <div class="hero-socials animate-slide-up delay-400">
+                <a href="https://github.com/sambikka" target="_blank" rel="noopener noreferrer" class="social-btn" data-tooltip="GitHub">
+                    <i class="fab fa-github"></i>
+                </a>
+                <a href="https://linkedin.com/in/sambikka" target="_blank" rel="noopener noreferrer" class="social-btn" data-tooltip="LinkedIn">
+                    <i class="fab fa-linkedin-in"></i>
+                </a>
+                <a href="https://twitter.com/sambikka" target="_blank" rel="noopener noreferrer" class="social-btn" data-tooltip="Twitter">
+                    <i class="fab fa-twitter"></i>
+                </a>
+                <a href="https://dribbble.com/sambikka" target="_blank" rel="noopener noreferrer" class="social-btn" data-tooltip="Dribbble">
+                    <i class="fab fa-dribbble"></i>
+                </a>
+            </div>
+        </div>
+        
+        <div class="scroll-indicator">
+            <div class="mouse">
+                <div class="wheel"></div>
+            </div>
+            <span>Scroll to explore</span>
+        </div>
+    </section>
+
+    <section id="about" class="about">
+        <div class="floating-shapes">
+            <div class="shape shape-1"></div>
+            <div class="shape shape-2"></div>
+            <div class="shape shape-3"></div>
+        </div>
+        
+        <div class="container">
+            <div class="section-header" data-animate="fade-up">
+                <span class="section-tag">
+                    <span class="tag-line"></span>
+                    Discover my story
+                </span>
+                <h2 class="section-title">
+                    <span class="title-word">About</span>
+                    <span class="title-word highlight">Me</span>
+                </h2>
+            </div>
+            
+            <div class="about-grid">
+                <div class="about-visual" data-animate="fade-right">
+                    <div class="avatar-container">
+                        <div class="avatar-ring ring-1"></div>
+                        <div class="avatar-ring ring-2"></div>
+                        <div class="avatar-ring ring-3"></div>
+                        <div class="avatar-inner">
+                            <div class="avatar-placeholder">
+                                <i class="fas fa-laptop-code"></i>
+                            </div>
+                        </div>
+                        <div class="orbit orbit-1">
+                            <div class="orbit-icon"><i class="fab fa-react"></i></div>
+                        </div>
+                        <div class="orbit orbit-2">
+                            <div class="orbit-icon"><i class="fab fa-node-js"></i></div>
+                        </div>
+                        <div class="orbit orbit-3">
+                            <div class="orbit-icon"><i class="fab fa-python"></i></div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="about-content" data-animate="fade-left">
+                    <h3 class="about-heading">Passionate about creating digital magic</h3>
+                    <p class="about-text">
+                        I'm Sambikka, a Full Stack Developer with a love for building beautiful, functional web applications. My journey in tech started with curiosity and has evolved into a passionate career creating impactful digital experiences.
+                    </p>
+                    <p class="about-text">
+                        I specialize in modern JavaScript frameworks, scalable backend architectures, and intuitive user interfaces. When I'm not coding, you'll find me exploring new technologies, contributing to open source, or sharing knowledge with the dev community.
+                    </p>
+                    
+                    <div class="about-stats">
+                        <div class="stat-box" data-animate="zoom-in" data-delay="0">
+                            <div class="stat-icon"><i class="fas fa-briefcase"></i></div>
+                            <div class="stat-number" data-count="5">0</div>
+                            <div class="stat-suffix">+</div>
+                            <div class="stat-label">Years Experience</div>
+                        </div>
+                        <div class="stat-box" data-animate="zoom-in" data-delay="100">
+                            <div class="stat-icon"><i class="fas fa-rocket"></i></div>
+                            <div class="stat-number" data-count="45">0</div>
+                            <div class="stat-suffix">+</div>
+                            <div class="stat-label">Projects Shipped</div>
+                        </div>
+                        <div class="stat-box" data-animate="zoom-in" data-delay="200">
+                            <div class="stat-icon"><i class="fas fa-heart"></i></div>
+                            <div class="stat-number" data-count="30">0</div>
+                            <div class="stat-suffix">+</div>
+                            <div class="stat-label">Happy Clients</div>
+                        </div>
+                        <div class="stat-box" data-animate="zoom-in" data-delay="300">
+                            <div class="stat-icon"><i class="fas fa-star"></i></div>
+                            <div class="stat-number" data-count="15">0</div>
+                            <div class="stat-suffix">+</div>
+                            <div class="stat-label">Technologies</div>
+                        </div>
+                    </div>
+                    
+                    <a href="#" class="btn btn-magnetic btn-primary" download data-animate="fade-up">
+                        <span class="btn-text"><i class="fas fa-download"></i> Download Resume</span>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="skills" class="skills">
+        <div class="container">
+            <div class="section-header" data-animate="fade-up">
+                <span class="section-tag">
+                    <span class="tag-line"></span>
+                    My expertise
+                </span>
+                <h2 class="section-title">
+                    <span class="title-word">Tech</span>
+                    <span class="title-word highlight">Stack</span>
+                </h2>
+            </div>
+            
+            <div class="skills-orbit" data-animate="fade-up">
+                <div class="orbit-center">
+                    <i class="fas fa-code"></i>
+                </div>
+                <div class="orbit-ring orbit-ring-1">
+                    <div class="orbit-item" data-tooltip="React"><i class="fab fa-react"></i></div>
+                    <div class="orbit-item" data-tooltip="Node.js"><i class="fab fa-node-js"></i></div>
+                    <div class="orbit-item" data-tooltip="TypeScript"><i class="fab fa-js-square"></i></div>
+                    <div class="orbit-item" data-tooltip="Python"><i class="fab fa-python"></i></div>
+                </div>
+                <div class="orbit-ring orbit-ring-2">
+                    <div class="orbit-item" data-tooltip="Docker"><i class="fab fa-docker"></i></div>
+                    <div class="orbit-item" data-tooltip="AWS"><i class="fab fa-aws"></i></div>
+                    <div class="orbit-item" data-tooltip="Git"><i class="fab fa-git-alt"></i></div>
+                    <div class="orbit-item" data-tooltip="MongoDB"><i class="fas fa-leaf"></i></div>
+                </div>
+            </div>
+            
+            <div class="skills-grid">
+                <div class="skill-category" data-animate="fade-up" data-delay="0">
+                    <div class="category-header">
+                        <div class="category-icon"><i class="fas fa-palette"></i></div>
+                        <h3>Frontend</h3>
+                    </div>
+                    <div class="skill-list">
+                        <div class="skill-item">
+                            <div class="skill-info">
+                                <span class="skill-name">React / Next.js</span>
+                                <span class="skill-percent">95%</span>
+                            </div>
+                            <div class="skill-bar">
+                                <div class="skill-fill" data-width="95"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-info">
+                                <span class="skill-name">TypeScript</span>
+                                <span class="skill-percent">92%</span>
+                            </div>
+                            <div class="skill-bar">
+                                <div class="skill-fill" data-width="92"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-info">
+                                <span class="skill-name">Tailwind CSS</span>
+                                <span class="skill-percent">90%</span>
+                            </div>
+                            <div class="skill-bar">
+                                <div class="skill-fill" data-width="90"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-info">
+                                <span class="skill-name">Three.js / WebGL</span>
+                                <span class="skill-percent">78%</span>
+                            </div>
+                            <div class="skill-bar">
+                                <div class="skill-fill" data-width="78"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="skill-category" data-animate="fade-up" data-delay="100">
+                    <div class="category-header">
+                        <div class="category-icon"><i class="fas fa-server"></i></div>
+                        <h3>Backend</h3>
+                    </div>
+                    <div class="skill-list">
+                        <div class="skill-item">
+                            <div class="skill-info">
+                                <span class="skill-name">Node.js / Express</span>
+                                <span class="skill-percent">93%</span>
+                            </div>
+                            <div class="skill-bar">
+                                <div class="skill-fill" data-width="93"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-info">
+                                <span class="skill-name">Python / Django</span>
+                                <span class="skill-percent">85%</span>
+                            </div>
+                            <div class="skill-bar">
+                                <div class="skill-fill" data-width="85"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-info">
+                                <span class="skill-name">GraphQL</span>
+                                <span class="skill-percent">88%</span>
+                            </div>
+                            <div class="skill-bar">
+                                <div class="skill-fill" data-width="88"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-info">
+                                <span class="skill-name">REST APIs</span>
+                                <span class="skill-percent">96%</span>
+                            </div>
+                            <div class="skill-bar">
+                                <div class="skill-fill" data-width="96"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="skill-category" data-animate="fade-up" data-delay="200">
+                    <div class="category-header">
+                        <div class="category-icon"><i class="fas fa-database"></i></div>
+                        <h3>Database</h3>
+                    </div>
+                    <div class="skill-list">
+                        <div class="skill-item">
+                            <div class="skill-info">
+                                <span class="skill-name">MongoDB</span>
+                                <span class="skill-percent">91%</span>
+                            </div>
+                            <div class="skill-bar">
+                                <div class="skill-fill" data-width="91"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-info">
+                                <span class="skill-name">PostgreSQL</span>
+                                <span class="skill-percent">88%</span>
+                            </div>
+                            <div class="skill-bar">
+                                <div class="skill-fill" data-width="88"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-info">
+                                <span class="skill-name">Redis</span>
+                                <span class="skill-percent">82%</span>
+                            </div>
+                            <div class="skill-bar">
+                                <div class="skill-fill" data-width="82"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="skill-category" data-animate="fade-up" data-delay="300">
+                    <div class="category-header">
+                        <div class="category-icon"><i class="fas fa-cloud"></i></div>
+                        <h3>DevOps & Cloud</h3>
+                    </div>
+                    <div class="skill-list">
+                        <div class="skill-item">
+                            <div class="skill-info">
+                                <span class="skill-name">Docker / K8s</span>
+                                <span class="skill-percent">86%</span>
+                            </div>
+                            <div class="skill-bar">
+                                <div class="skill-fill" data-width="86"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-info">
+                                <span class="skill-name">AWS / GCP</span>
+                                <span class="skill-percent">84%</span>
+                            </div>
+                            <div class="skill-bar">
+                                <div class="skill-fill" data-width="84"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-info">
+                                <span class="skill-name">CI/CD Pipelines</span>
+                                <span class="skill-percent">90%</span>
+                            </div>
+                            <div class="skill-bar">
+                                <div class="skill-fill" data-width="90"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="projects" class="projects">
+        <div class="container">
+            <div class="section-header" data-animate="fade-up">
+                <span class="section-tag">
+                    <span class="tag-line"></span>
+                    My creative work
+                </span>
+                <h2 class="section-title">
+                    <span class="title-word">Featured</span>
+                    <span class="title-word highlight">Projects</span>
+                </h2>
+            </div>
+            
+            <div class="filter-tabs" data-animate="fade-up">
+                <button class="filter-btn active" data-filter="all">All</button>
+                <button class="filter-btn" data-filter="fullstack">Full Stack</button>
+                <button class="filter-btn" data-filter="frontend">Frontend</button>
+                <button class="filter-btn" data-filter="backend">Backend</button>
+            </div>
+            
+            <div class="projects-masonry">
+                <article class="project-card featured" data-category="fullstack" data-animate="fade-up" data-delay="0">
+                    <div class="project-image">
+                        <div class="image-gradient"></div>
+                        <div class="project-icon"><i class="fas fa-shopping-bag"></i></div>
+                        <div class="project-overlay">
+                            <div class="overlay-content">
+                                <a href="#" class="overlay-btn"><i class="fas fa-external-link-alt"></i> Live</a>
+                                <a href="#" class="overlay-btn"><i class="fab fa-github"></i> Code</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="project-content">
+                        <div class="project-meta">
+                            <span class="project-type">Full Stack</span>
+                        </div>
+                        <h3>E-Commerce Platform</h3>
+                        <p>Modern shopping experience with real-time inventory, Stripe payments, and admin dashboard.</p>
+                        <div class="project-stack">
+                            <span>React</span>
+                            <span>Node.js</span>
+                            <span>MongoDB</span>
+                            <span>Stripe</span>
+                        </div>
+                    </div>
+                </article>
+                
+                <article class="project-card" data-category="fullstack" data-animate="fade-up" data-delay="100">
+                    <div class="project-image">
+                        <div class="image-gradient"></div>
+                        <div class="project-icon"><i class="fas fa-comments"></i></div>
+                        <div class="project-overlay">
+                            <div class="overlay-content">
+                                <a href="#" class="overlay-btn"><i class="fas fa-external-link-alt"></i> Live</a>
+                                <a href="#" class="overlay-btn"><i class="fab fa-github"></i> Code</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="project-content">
+                        <div class="project-meta">
+                            <span class="project-type">Full Stack</span>
+                        </div>
+                        <h3>Real-Time Chat App</h3>
+                        <p>Messaging platform with WebSocket, file sharing, and end-to-end encryption.</p>
+                        <div class="project-stack">
+                            <span>Next.js</span>
+                            <span>Socket.io</span>
+                            <span>PostgreSQL</span>
+                        </div>
+                    </div>
+                </article>
+                
+                <article class="project-card" data-category="frontend" data-animate="fade-up" data-delay="200">
+                    <div class="project-image">
+                        <div class="image-gradient"></div>
+                        <div class="project-icon"><i class="fas fa-chart-line"></i></div>
+                        <div class="project-overlay">
+                            <div class="overlay-content">
+                                <a href="#" class="overlay-btn"><i class="fas fa-external-link-alt"></i> Live</a>
+                                <a href="#" class="overlay-btn"><i class="fab fa-github"></i> Code</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="project-content">
+                        <div class="project-meta">
+                            <span class="project-type">Frontend</span>
+                        </div>
+                        <h3>Analytics Dashboard</h3>
+                        <p>Interactive data visualization with real-time metrics and custom reports.</p>
+                        <div class="project-stack">
+                            <span>React</span>
+                            <span>D3.js</span>
+                            <span>TypeScript</span>
+                        </div>
+                    </div>
+                </article>
+                
+                <article class="project-card" data-category="backend" data-animate="fade-up" data-delay="0">
+                    <div class="project-image">
+                        <div class="image-gradient"></div>
+                        <div class="project-icon"><i class="fas fa-cloud-upload-alt"></i></div>
+                        <div class="project-overlay">
+                            <div class="overlay-content">
+                                <a href="#" class="overlay-btn"><i class="fas fa-external-link-alt"></i> Live</a>
+                                <a href="#" class="overlay-btn"><i class="fab fa-github"></i> Code</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="project-content">
+                        <div class="project-meta">
+                            <span class="project-type">Backend</span>
+                        </div>
+                        <h3>Cloud Storage API</h3>
+                        <p>Scalable file storage with upload, versioning, and CDN integration.</p>
+                        <div class="project-stack">
+                            <span>Node.js</span>
+                            <span>AWS S3</span>
+                            <span>Redis</span>
+                        </div>
+                    </div>
+                </article>
+                
+                <article class="project-card featured" data-category="fullstack" data-animate="fade-up" data-delay="100">
+                    <div class="project-image">
+                        <div class="image-gradient"></div>
+                        <div class="project-icon"><i class="fas fa-tasks"></i></div>
+                        <div class="project-overlay">
+                            <div class="overlay-content">
+                                <a href="#" class="overlay-btn"><i class="fas fa-external-link-alt"></i> Live</a>
+                                <a href="#" class="overlay-btn"><i class="fab fa-github"></i> Code</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="project-content">
+                        <div class="project-meta">
+                            <span class="project-type">Full Stack</span>
+                        </div>
+                        <h3>Project Management Tool</h3>
+                        <p>Collaborative workspace with Kanban boards, team features, and analytics.</p>
+                        <div class="project-stack">
+                            <span>React</span>
+                            <span>GraphQL</span>
+                            <span>PostgreSQL</span>
+                        </div>
+                    </div>
+                </article>
+                
+                <article class="project-card" data-category="frontend" data-animate="fade-up" data-delay="200">
+                    <div class="project-image">
+                        <div class="image-gradient"></div>
+                        <div class="project-icon"><i class="fas fa-utensils"></i></div>
+                        <div class="project-overlay">
+                            <div class="overlay-content">
+                                <a href="#" class="overlay-btn"><i class="fas fa-external-link-alt"></i> Live</a>
+                                <a href="#" class="overlay-btn"><i class="fab fa-github"></i> Code</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="project-content">
+                        <div class="project-meta">
+                            <span class="project-type">Frontend</span>
+                        </div>
+                        <h3>Restaurant Booking App</h3>
+                        <p>Elegant reservation system with interactive menus and reviews.</p>
+                        <div class="project-stack">
+                            <span>Next.js</span>
+                            <span>Framer Motion</span>
+                            <span>Prisma</span>
+                        </div>
+                    </div>
+                </article>
+            </div>
+        </div>
+    </section>
+
+    <section id="experience" class="experience">
+        <div class="container">
+            <div class="section-header" data-animate="fade-up">
+                <span class="section-tag">
+                    <span class="tag-line"></span>
+                    My journey
+                </span>
+                <h2 class="section-title">
+                    <span class="title-word">Work</span>
+                    <span class="title-word highlight">Experience</span>
+                </h2>
+            </div>
+            
+            <div class="timeline">
+                <div class="timeline-line"></div>
+                
+                <div class="timeline-item" data-animate="fade-right" data-delay="0">
+                    <div class="timeline-dot">
+                        <div class="dot-pulse"></div>
+                    </div>
+                    <div class="timeline-card">
+                        <div class="card-top">
+                            <div class="card-title">
+                                <h3>Senior Full Stack Developer</h3>
+                                <h4>TechCorp Solutions</h4>
+                            </div>
+                            <span class="card-date">2022 - Present</span>
+                        </div>
+                        <ul class="card-points">
+                            <li>Architected microservices handling 100K+ daily users</li>
+                            <li>Reduced deployment time by 60% with CI/CD optimization</li>
+                            <li>Led team of 5 developers and mentored juniors</li>
+                            <li>Improved app performance by 40% through optimization</li>
+                        </ul>
+                    </div>
+                </div>
+                
+                <div class="timeline-item" data-animate="fade-left" data-delay="100">
+                    <div class="timeline-dot">
+                        <div class="dot-pulse"></div>
+                    </div>
+                    <div class="timeline-card">
+                        <div class="card-top">
+                            <div class="card-title">
+                                <h3>Full Stack Developer</h3>
+                                <h4>Digital Innovations Inc.</h4>
+                            </div>
+                            <span class="card-date">2020 - 2022</span>
+                        </div>
+                        <ul class="card-points">
+                            <li>Built 8+ client-facing web applications from scratch</li>
+                            <li>Developed RESTful APIs handling 50K+ requests/min</li>
+                            <li>Achieved 99% cross-browser compatibility</li>
+                            <li>Cut page load times by 50% with code splitting</li>
+                        </ul>
+                    </div>
+                </div>
+                
+                <div class="timeline-item" data-animate="fade-right" data-delay="200">
+                    <div class="timeline-dot">
+                        <div class="dot-pulse"></div>
+                    </div>
+                    <div class="timeline-card">
+                        <div class="card-top">
+                            <div class="card-title">
+                                <h3>Frontend Developer</h3>
+                                <h4>WebWorks Studio</h4>
+                            </div>
+                            <span class="card-date">2019 - 2020</span>
+                        </div>
+                        <ul class="card-points">
+                            <li>Created reusable component library for 12+ projects</li>
+                            <li>Implemented complex state management with Redux</li>
+                            <li>Delivered pixel-perfect UIs collaborating with designers</li>
+                            <li>Active participant in agile ceremonies</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact" class="contact">
+        <div class="contact-bg-shapes">
+            <div class="bg-shape shape-a"></div>
+            <div class="bg-shape shape-b"></div>
+        </div>
+        
+        <div class="container">
+            <div class="section-header" data-animate="fade-up">
+                <span class="section-tag">
+                    <span class="tag-line"></span>
+                    Let's connect
+                </span>
+                <h2 class="section-title">
+                    <span class="title-word">Get In</span>
+                    <span class="title-word highlight">Touch</span>
+                </h2>
+            </div>
+            
+            <div class="contact-grid">
+                <div class="contact-info" data-animate="fade-right">
+                    <h3>Let's create something amazing together</h3>
+                    <p>Have a project in mind or just want to chat? I'd love to hear from you. Let's turn your ideas into reality!</p>
+                    
+                    <div class="contact-cards">
+                        <div class="contact-card">
+                            <div class="card-icon"><i class="fas fa-envelope"></i></div>
+                            <div class="card-details">
+                                <h4>Email</h4>
+                                <a href="mailto:sambikka@email.com">sambikka@email.com</a>
+                            </div>
+                        </div>
+                        <div class="contact-card">
+                            <div class="card-icon"><i class="fas fa-phone-alt"></i></div>
+                            <div class="card-details">
+                                <h4>Phone</h4>
+                                <a href="tel:+911234567890">+91 123 456 7890</a>
+                            </div>
+                        </div>
+                        <div class="contact-card">
+                            <div class="card-icon"><i class="fas fa-map-marker-alt"></i></div>
+                            <div class="card-details">
+                                <h4>Location</h4>
+                                <span>Bangalore, India</span>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="contact-socials">
+                        <a href="https://github.com/sambikka" target="_blank" rel="noopener noreferrer" class="social-link"><i class="fab fa-github"></i></a>
+                        <a href="https://linkedin.com/in/sambikka" target="_blank" rel="noopener noreferrer" class="social-link"><i class="fab fa-linkedin-in"></i></a>
+                        <a href="https://twitter.com/sambikka" target="_blank" rel="noopener noreferrer" class="social-link"><i class="fab fa-twitter"></i></a>
+                        <a href="https://dribbble.com/sambikka" target="_blank" rel="noopener noreferrer" class="social-link"><i class="fab fa-dribbble"></i></a>
+                    </div>
+                </div>
+                
+                <form class="contact-form" id="contactForm" data-animate="fade-left">
+                    <div class="form-group floating-label">
+                        <input type="text" id="name" name="name" required placeholder=" ">
+                        <label for="name"><i class="fas fa-user"></i> Your Name</label>
+                        <div class="input-line"></div>
+                    </div>
+                    <div class="form-group floating-label">
+                        <input type="email" id="email" name="email" required placeholder=" ">
+                        <label for="email"><i class="fas fa-envelope"></i> Your Email</label>
+                        <div class="input-line"></div>
+                    </div>
+                    <div class="form-group floating-label">
+                        <input type="text" id="subject" name="subject" required placeholder=" ">
+                        <label for="subject"><i class="fas fa-tag"></i> Subject</label>
+                        <div class="input-line"></div>
+                    </div>
+                    <div class="form-group floating-label">
+                        <textarea id="message" name="message" rows="5" required placeholder=" "></textarea>
+                        <label for="message"><i class="fas fa-comment"></i> Your Message</label>
+                        <div class="input-line"></div>
+                    </div>
+                    <button type="submit" class="btn btn-magnetic btn-primary btn-submit">
+                        <span class="btn-text">Send Message</span>
+                        <span class="btn-icon"><i class="fas fa-paper-plane"></i></span>
+                        <span class="btn-bg"></span>
+                    </button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="footer-wave">
+            <svg viewBox="0 0 1440 100" preserveAspectRatio="none">
+                <path d="M0,50 C360,100 1080,0 1440,50 L1440,100 L0,100 Z" fill="currentColor"></path>
+            </svg>
+        </div>
+        
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-brand">
+                    <a href="#home" class="logo">
+                        <span class="logo-bracket">{</span>
+                        <span class="logo-text">Sambikka</span>
+                        <span class="logo-bracket">}</span>
+                    </a>
+                    <p>Building beautiful web experiences with passion and precision.</p>
+                </div>
+                <div class="footer-links">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="#home">Home</a></li>
+                        <li><a href="#about">About</a></li>
+                        <li><a href="#projects">Projects</a></li>
+                        <li><a href="#contact">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer-social">
+                    <h4>Follow Me</h4>
+                    <div class="social-icons">
+                        <a href="https://github.com/sambikka" target="_blank" rel="noopener noreferrer"><i class="fab fa-github"></i></a>
+                        <a href="https://linkedin.com/in/sambikka" target="_blank" rel="noopener noreferrer"><i class="fab fa-linkedin-in"></i></a>
+                        <a href="https://twitter.com/sambikka" target="_blank" rel="noopener noreferrer"><i class="fab fa-twitter"></i></a>
+                        <a href="https://dribbble.com/sambikka" target="_blank" rel="noopener noreferrer"><i class="fab fa-dribbble"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2026 Sambikka. Crafted with <i class="fas fa-heart"></i> and lots of coffee.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
